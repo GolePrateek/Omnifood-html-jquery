@@ -96,4 +96,12 @@ $(document).ready(function(){
         }
     });
     
+    
+    /* Closing mobile nav menu on click */
+    $('.js--main-nav li a').click(function(){
+        if($('.js--nav-icon i').is(":visible")){
+            $('.js--nav-icon').trigger("click");
+        }
+    });
+    
 });
